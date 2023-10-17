@@ -1,21 +1,6 @@
-# Arthera Hardhat Template
+# Haerbeats
 
-This Hardhat template is ideal for hackathons and quick prototyping.
-
-It includes:
-
--   [Typescript](https://www.typescriptlang.org/)
--   [Ethers v6](https://docs.ethers.org/v6/)
--   [Open Zeppelin contracts](https://www.openzeppelin.com/contracts)
--   [Hardhat Verify plugin](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify)
--   [Hardhat Deploy plugin](https://github.com/wighawag/hardhat-deploy)
-
-You may want to check the [dev resources](https://docs.arthera.net/build/developing-sc/dev-resources) available in Arthera docs, and [this walkthrough video](https://www.youtube.com/watch?v=kjPvFk4qmpc). 
-
-## Supported networks
-
--   [Arthera Testnet](https://explorer-test.arthera.net/)
--   [Goerli](https://goerli.etherscan.io/)
+Llistens to the network's heartbeat.
 
 ## Install
 
@@ -23,60 +8,10 @@ You may want to check the [dev resources](https://docs.arthera.net/build/develop
 pnpm install
 ```
 
-Create a `.env` file:
+## Run
 
 ```
-cp .env.template .env
-```
-
-Add your own keys in the `.env` file.
-
-## Test
-
-```
-pnpm test
-```
-
-## Deploy
-
-Deploy to Goerli:
-
-```
-pnpm deploy:goerli
-```
-
-Deploy to Arthera Testnet:
-
-```
-pnpm deploy:arthera
-```
-
-## Mint
-
-On Goerli:
-
-```
-pnpm mint:goerli 42
-```
-
-On Arthera Testnet:
-
-```
-pnpm mint:arthera 42
-```
-
-## Send
-
-On Goerli:
-
-```
-pnpm send:goerli 8
-```
-
-On Arthera Testnet:
-
-```
-pnpm send:arthera 8
+pnpm listen
 ```
 
 ## Versions
