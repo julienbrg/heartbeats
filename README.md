@@ -1,6 +1,6 @@
 # Haerbeats
 
-Llistens to the network's heartbeat.
+Listens to the network's heartbeats.
 
 ## Install
 
