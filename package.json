@@ -14,7 +14,8 @@
         "send:goerli": "hardhat send --wallet 0x70456d078950db075283931D9bE2E01B49f3e71e --network goerli --amount",
         "send:arthera": "hardhat send --wallet 0x70456d078950db075283931D9bE2E01B49f3e71e --network arthera-testnet --amount",
         "listen": "hardhat run scripts/listen.ts --network arthera-testnet",
-        "prettier": "prettier --write ."
+        "prettier": "prettier --write .",
+        "listen:mainnet": "hardhat run scripts/listen.ts --network arthera"
     },
     "keywords": [],
     "author": "",

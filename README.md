@@ -10,8 +10,14 @@ pnpm install
 
 ## Run
 
+Listen to the Testnet: 
 ```
 pnpm listen
+```
+
+Listen to the Mainnet: 
+```
+pnpm listen:mainnet
 ```
 
 ## Versions
