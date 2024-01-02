@@ -12,7 +12,9 @@ const {
     GOERLI_PRIVATE_KEY,
     ETHERSCAN_API_KEY,
     ARTHERA_TESTNET_RPC_ENDPOINT_URL,
-    ARTHERA_TESTNET_PRIVATE_KEY
+    ARTHERA_TESTNET_PRIVATE_KEY,
+    ARTHERA_MAINNET_RPC_ENDPOINT_URL,
+    ARTHERA_MAINNET_PRIVATE_KEY
 } = process.env
 
 const config: HardhatUserConfig = {
@@ -38,6 +40,15 @@ const config: HardhatUserConfig = {
             accounts:
                 ARTHERA_TESTNET_PRIVATE_KEY !== undefined
                     ? [ARTHERA_TESTNET_PRIVATE_KEY]
+                    : []
+        },
+        "arthera": {
+            url:
+                ARTHERA_MAINNET_RPC_ENDPOINT_URL ||
+                "https://rpc.arthera.net",
+            accounts:
+                ARTHERA_MAINNET_PRIVATE_KEY !== undefined
+                    ? [ARTHERA_MAINNET_PRIVATE_KEY]
                     : []
         }
     },
